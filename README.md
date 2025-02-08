@@ -52,8 +52,10 @@ projet/
 ├── **scaler.pkl**           
 ├── **requirements.txt**   
 ├── **templates/**        
-│   └── **index.html**      
-├── **README.md**          
+│   └── **index.html**     
+├── **ProjetFinal.ipynb** 
+├── **README.md** 
+
 
 ### Description des fichiers :
 - **`app.py`** : Contient le code backend pour charger le modèle et gérer les requêtes API.  
@@ -61,5 +63,6 @@ projet/
 - **`scaler.pkl`** : Fichier permettant de normaliser les données d'entrée avant la prédiction.  
 - **`requirements.txt`** : Liste des dépendances Python requises pour exécuter l'application.  
 - **`templates/index.html`** : Interface frontend pour interagir avec le modèle via une application web.
+- **ProjetFinal.ipynb**  : Notebook Jupyter avec le code de préparation des données, l'entraînement du modèle et l'évaluation
 - **README.md**          :Fichier contenant les instructions pour le déploiement et l'utilisation du projet
 
