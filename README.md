@@ -1,4 +1,5 @@
 # GenderEmotionRecognizer – Reconnaissance du Genre et de l’Émotion à partir de la Parole  
+> **Dépôt GitHub** : [https://github.com/MamiyaMegueye/GenderEmotionRecognizer/tree/main](https://github.com/MamiyaMegueye/GenderEmotionRecognizer/tree/main)
 
 ## Introduction  
 Ce projet vise à prédire le **genre** et l'**émotion** à partir d'enregistrements audio de parole. Nous avons utilisé diverses techniques de **machine learning** et de **deep learning** pour classifier les caractéristiques audio extraites d’un jeu de données reconnu.  
