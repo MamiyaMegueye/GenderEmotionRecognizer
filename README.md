@@ -10,9 +10,9 @@ Nous avons utilisé la base de données **Ryerson Audio-Visual Database of Emoti
 - **Source** : [Zenodo - RAVDESS Dataset](https://zenodo.org/record/1188976)  
 - **Fichiers utilisés** : **Audio_Speech_Actors_01-24**  
 
-## 🎛Extraction des Caractéristiques  
+## Extraction des Caractéristiques  
 Pour analyser les fichiers audio, nous avons extrait plusieurs caractéristiques acoustiques :  
-- **MFCCs (Mel-Frequency Cepstral Coefficients)** : `mfcc0` à `mfcc18`  
+- **MFCCs (Mel-Frequency Cepstral Coefficients)** : `mfcc0` à `mfcc15`  
 - **Taux de passage par zéro (Zero-Crossing Rate - ZCR)**  
 - **Énergie RMS (Root Mean Square - RMS)**  
 - **Centroïde spectral**  
