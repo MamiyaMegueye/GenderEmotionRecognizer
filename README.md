@@ -47,10 +47,9 @@ Le modèle LSTM a été entraîné avec les paramètres suivants :
 Le projet contient tous les fichiers nécessaires pour déployer le modèle. Voici la structure du dossier :  
 
 projet/  
-├── **app.py**               # Code backend pour charger le modèle et gérer les requêtes  
-├── **lstm_model.h5**        # Modèle LSTM pré-entraîné  
-├── **scaler.pkl**           # Fichier de prétraitement pour normaliser les données d'entrée  
-├── **requirements.txt**     # Liste des dépendances nécessaires  
-├── **templates/**           # Dossier contenant les fichiers HTML  
-│   └── **index.html**       # Interface frontend (HTML) pour interagir avec le modèle  
-
+├── **app.py**             # Code backend pour charger le modèle et gérer les requêtes  
+├── **lstm_model.h5**      # Modèle LSTM pré-entraîné  
+├── **scaler.pkl**         # Fichier de prétraitement pour normaliser les données d'entrée  
+├── **requirements.txt**   # Liste des dépendances nécessaires  
+├── **templates/**         # Dossier contenant les fichiers HTML  
+│   └── **index.html**     # Interface frontend (HTML) pour interagir avec le modèle  
