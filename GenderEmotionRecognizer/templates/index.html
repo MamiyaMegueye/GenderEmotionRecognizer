@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet 🎵🎤</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff99cc, #66ccff);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: white;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .container {
+            background-color: white;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 500px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            color: black;
+        }
+
+        .label {
+            font-size: 1.2em;
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        input[type="file"] {
+            width: 80%;
+            padding: 10px;
+            margin: 15px 0;
+            border-radius: 8px;
+            border: 2px solid #4CAF50;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        button {
+            background-color: #00aaff;
+            color: white;
+            font-size: 1.2em;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 0.3s;
+            width: 85%;
+        }
+
+        button:hover {
+            background-color: #007acc;
+            transform: scale(1.05);
+        }
+
+        .result {
+            font-size: 1.5em;
+            color: #008000;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.1);
+            width: 100%;
+            font-size: 1.2em;
+            color: #333;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+        .top-right-image {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            width: 80px; 
+            height: 80px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <img src="/static/logo.png" alt="Logo" class="top-right-image">
+    <h1>Reconnaissance du genre et des émotions à partir de la voix</h1>
+
+    <div class="container">
+        <p class="label">Veuillez télécharger un fichier audio (.wav) 📂:</p>
+        <form method="POST" enctype="multipart/form-data">
+            <input type="file" name="audio_file" required>
+            <p><strong>Fichier sélectionné :</strong> {{ file_name }}</p>
+            <button type="submit">Analyser l'émotion et le genre🎤</button>
+        </form>
+
+        {% if prediction %}
+            <p class="result">Émotion et Genre détecté : {{ prediction }}</p>
+        {% endif %}
+    </div>
+
+    <footer>
+        🎵 Projet réalisé par: 
+        <div class="projet">MEGUEYA EL Mam, ASIDAH Nada, AABOUCH Fatima Zahra, FATIH Kawtar</div>
+    </footer>
+
+</body>
+</html>
