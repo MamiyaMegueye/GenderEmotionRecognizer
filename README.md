@@ -63,6 +63,6 @@ projet/
 - **`scaler.pkl`** : Fichier permettant de normaliser les données d'entrée avant la prédiction.  
 - **`requirements.txt`** : Liste des dépendances Python requises pour exécuter l'application.  
 - **`templates/index.html`** : Interface frontend pour interagir avec le modèle via une application web.
-- **ProjetFinal.ipynb**  : Notebook Jupyter avec le code de préparation des données, l'entraînement du modèle et l'évaluation
-- **README.md**          :Fichier contenant les instructions pour le déploiement et l'utilisation du projet
+- **`ProjetFinal.ipynb`**  : Notebook Jupyter avec le code de préparation des données, l'entraînement du modèle et l'évaluation
+- **`README.md`**          :Fichier contenant les instructions pour le déploiement et l'utilisation du projet
 
