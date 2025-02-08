@@ -1,6 +1,6 @@
 # GenderEmotionRecognizer – Reconnaissance du Genre et de l’Émotion à partir de la Parole  
 
-##  Introduction  
+## Introduction  
 Ce projet vise à prédire le **genre** et l'**émotion** à partir d'enregistrements audio de parole. Nous avons utilisé diverses techniques de **machine learning** et de **deep learning** pour classifier les caractéristiques audio extraites d’un jeu de données reconnu.  
 
 ## Jeu de Données  
@@ -31,7 +31,6 @@ Nous avons testé différents modèles de machine learning et obtenu les précis
 | Forêt Aléatoire (Random Forest) | 76.01% |
 | XGBoost | 63.00% |
 
-
 ## Modèle de Deep Learning (LSTM)  
 Afin d'améliorer les performances, nous avons développé un **réseau de neurones basé sur LSTM**, atteignant :  
 **Précision : 94.07%**  
@@ -44,3 +43,11 @@ Le modèle LSTM a été entraîné avec les paramètres suivants :
 - **Optimiseur** : Adam  
 - **Fonction de perte** : Categorical Crossentropy  
 
+## Déploiement  
+Le projet contient tous les fichiers nécessaires pour déployer le modèle. Voici la structure du dossier :  
+projet/
+├── app.py                # Code backend pour charger le modèle et gérer les requêtes  
+├── lstm_model.h5         # Modèle LSTM pré-entraîné  
+├── scaler.pkl            # Fichier de prétraitement pour normaliser les données d'entrée  
+├── requirements.txt      # Liste des dépendances nécessaires  
+├── index.html            # Interface frontend (HTML) pour interagir avec le modèle  
