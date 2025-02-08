@@ -1,7 +1,7 @@
 # GenderEmotionRecognizer
 # 🎤 Gender & Emotion Recognition from Speech using Deep Learning
 
-## 📖 Introduction
+##  Introduction
 This project focuses on predicting **gender** and **emotion** from audio speech recordings. We used various **machine learning** and **deep learning** techniques to classify audio features extracted from a well-known dataset.
 
 ## 📂 Dataset
@@ -19,11 +19,11 @@ To analyze the audio files, we extracted key features:
 - **Spectral Centroid**
 - **Spectral Bandwidth**
 
-## 🔧 Data Processing  
+##  Data Processing  
 - **Normalization**: Standardizing feature values  
 - **Balancing**: Ensuring equal distribution of gender and emotions  
 
-## 🏆 Machine Learning Models  
+##  Machine Learning Models  
 We tested different ML models and obtained the following accuracies:
 
 | Model           | Accuracy |
@@ -32,24 +32,19 @@ We tested different ML models and obtained the following accuracies:
 | Random Forest       | 76.01% |
 | XGBoost            | 63.00% |
 
-## 🤖 Deep Learning Model (LSTM)  
+##  Deep Learning Model (LSTM)  
 To improve performance, we built an **LSTM-based neural network**, achieving:  
-✅ **Accuracy: 94.07%**  
-✅ **Loss: 0.2632**  
+ **Accuracy: 94.07%**  
+ **Loss: 0.2632**  
 
-## 📌 Model Training  
+## Model Training  
 The LSTM model was trained with:
 - **100 epochs**
 - **Batch size: 32**
 - **Optimizer: Adam**
 - **Loss function: Categorical Crossentropy**
 
-## 📊 Results Visualization  
+## Results Visualization  
 Loss and accuracy were plotted for both **training** and **validation** phases.
 
-## 🚀 How to Use  
-1. Clone this repository:  
-   ```bash
-   git clone https://github.com/YourUsername/YourRepository.git
-   cd YourRepository
 
