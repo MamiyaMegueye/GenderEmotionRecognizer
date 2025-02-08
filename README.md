@@ -53,3 +53,12 @@ projet/
 ├── **requirements.txt**   # Liste des dépendances nécessaires  
 ├── **templates/**         # Dossier contenant les fichiers HTML  
 │   └── **index.html**     # Interface frontend (HTML) pour interagir avec le modèle  
+
+
+### Description des fichiers :
+- **`app.py`** : Contient le code backend pour charger le modèle et gérer les requêtes API.  
+- **`lstm_model.h5`** : Modèle LSTM pré-entraîné utilisé pour la prédiction.  
+- **`scaler.pkl`** : Fichier permettant de normaliser les données d'entrée avant la prédiction.  
+- **`requirements.txt`** : Liste des dépendances Python requises pour exécuter l'application.  
+- **`templates/index.html`** : Interface frontend pour interagir avec le modèle via une application web.  
+
