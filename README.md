@@ -1,50 +1,46 @@
-# GenderEmotionRecognizer
-# 🎤 Gender & Emotion Recognition from Speech using Deep Learning
+# GenderEmotionRecognizer – Reconnaissance du Genre et de l’Émotion à partir de la Parole  
 
-##  Introduction
-This project focuses on predicting **gender** and **emotion** from audio speech recordings. We used various **machine learning** and **deep learning** techniques to classify audio features extracted from a well-known dataset.
+##  Introduction  
+Ce projet vise à prédire le **genre** et l'**émotion** à partir d'enregistrements audio de parole. Nous avons utilisé diverses techniques de **machine learning** et de **deep learning** pour classifier les caractéristiques audio extraites d’un jeu de données reconnu.  
 
-## 📂 Dataset
-We used the **Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS)**:
-- Authors: Livingstone & Russo  
-- License: **CC BY-NA-SC 4.0**  
-- Source: [Zenodo - RAVDESS Dataset](https://zenodo.org/record/1188976)  
-- Files: **Audio_Speech_Actors_01-24**  
+## Jeu de Données  
+Nous avons utilisé la base de données **Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS)** :  
+- **Auteurs** : Livingstone & Russo  
+- **Licence** : **CC BY-NA-SC 4.0**  
+- **Source** : [Zenodo - RAVDESS Dataset](https://zenodo.org/record/1188976)  
+- **Fichiers utilisés** : **Audio_Speech_Actors_01-24**  
 
-## 🎛️ Feature Extraction  
-To analyze the audio files, we extracted key features:
-- **MFCCs (Mel-Frequency Cepstral Coefficients)**: `mfcc0` to `mfcc18`
-- **Zero-Crossing Rate (ZCR)**
-- **Root Mean Square (RMS)**
-- **Spectral Centroid**
-- **Spectral Bandwidth**
+## 🎛Extraction des Caractéristiques  
+Pour analyser les fichiers audio, nous avons extrait plusieurs caractéristiques acoustiques :  
+- **MFCCs (Mel-Frequency Cepstral Coefficients)** : `mfcc0` à `mfcc18`  
+- **Taux de passage par zéro (Zero-Crossing Rate - ZCR)**  
+- **Énergie RMS (Root Mean Square - RMS)**  
+- **Centroïde spectral**  
+- **Largeur de bande spectrale**  
 
-##  Data Processing  
-- **Normalization**: Standardizing feature values  
-- **Balancing**: Ensuring equal distribution of gender and emotions  
+## Prétraitement des Données  
+- **Normalisation** : Standardisation des valeurs des caractéristiques  
+- **Équilibrage** : Répartition équilibrée des genres et des émotions  
 
-##  Machine Learning Models  
-We tested different ML models and obtained the following accuracies:
+## Modèles de Machine Learning  
+Nous avons testé différents modèles de machine learning et obtenu les précisions suivantes :  
 
-| Model           | Accuracy |
-|----------------|----------|
-| Logistic Regression | 33.42% |
-| Random Forest       | 76.01% |
-| XGBoost            | 63.00% |
+| Modèle              | Précision |
+|---------------------|----------|
+| Régression Logistique | 33.42% |
+| Forêt Aléatoire (Random Forest) | 76.01% |
+| XGBoost | 63.00% |
 
-##  Deep Learning Model (LSTM)  
-To improve performance, we built an **LSTM-based neural network**, achieving:  
- **Accuracy: 94.07%**  
- **Loss: 0.2632**  
 
-## Model Training  
-The LSTM model was trained with:
-- **100 epochs**
-- **Batch size: 32**
-- **Optimizer: Adam**
-- **Loss function: Categorical Crossentropy**
+## Modèle de Deep Learning (LSTM)  
+Afin d'améliorer les performances, nous avons développé un **réseau de neurones basé sur LSTM**, atteignant :  
+**Précision : 94.07%**  
+**Perte (Loss) : 0.2632**  
 
-## Results Visualization  
-Loss and accuracy were plotted for both **training** and **validation** phases.
-
+## Entraînement du Modèle  
+Le modèle LSTM a été entraîné avec les paramètres suivants :  
+- **Nombre d’époques** : 100  
+- **Taille du batch** : 32  
+- **Optimiseur** : Adam  
+- **Fonction de perte** : Categorical Crossentropy  
 
