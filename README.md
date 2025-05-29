@@ -67,3 +67,16 @@ projet/
 - **`ProjetFinal.ipynb`**  : Notebook Jupyter avec le code de préparation des données, l'entraînement du modèle et l'évaluation
 - **`README.md`**          :Fichier contenant les instructions pour le déploiement et l'utilisation du projet
 
+
+
+
+
+facebook_scraper_project/
+├── selenium_pipeline/ # Modules d’automatisation via Selenium
+│ ├── action.py # Fonctions de clic, scroll, extraction des commentaires
+│ ├── config.py # Configuration du navigateur et authentification Facebook
+│ └── requirements.txt # Fichier listant les dépendances Python
+│
+├── output/ # Répertoire des résultats
+│ └── visible_comments_<post>.csv # Commentaires visibles extraits pour chaque post
+
